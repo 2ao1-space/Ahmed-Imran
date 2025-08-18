@@ -1,0 +1,1 @@
+import{g as e,S as i}from"./SplitText.Bve8ljHE.js";import{S as r}from"./ScrollTrigger.C4gmGO9R.js";e.registerPlugin(r,i);r.config({limitCallbacks:!0,ignoreMobileResize:!0});e.config({nullTargetWarn:!1,autoSleep:60,force3D:!0});
