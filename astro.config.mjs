@@ -1,16 +1,14 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
-import node from "@astrojs/node";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://2ao1.space",
   base: "/",
-
+  output: "static",
   integrations: [react(), sitemap()],
 
-  // Performance optimizations
   build: {
     inlineStylesheets: "auto",
   },
@@ -31,10 +29,5 @@ export default defineConfig({
     },
   },
 
-  adapter: node({
-    mode: "standalone",
-  }),
-
-  // Enable compression
   compressHTML: true,
 });

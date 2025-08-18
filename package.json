@@ -17,6 +17,7 @@
     "ahmed omran space"
   ],
   "license": "MIT",
+  "homepage": "https://2ao1.space/",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -26,7 +27,6 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/node": "^9.4.0",
     "@astrojs/react": "^4.3.0",
     "@astrojs/sitemap": "^3.4.2",
     "@astrojs/tailwind": "^6.0.2",
