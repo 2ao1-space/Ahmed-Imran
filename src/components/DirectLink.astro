@@ -1,0 +1,13 @@
+---
+const { href, target, class: className } = Astro.props;
+---
+
+<div class="inline-block">
+  <a
+    href={href}
+    class={`${className} animated-link flex flex-col justify-center items-center overflow-y-hidden`}
+    target={target}
+  >
+    <slot />
+  </a>
+</div>

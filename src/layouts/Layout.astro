@@ -1,22 +1,76 @@
+---
+const { title = `${info.name}` } = Astro.props;
+import info from "../data/info.json";
+import Loading from "./Loading.astro";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+    <title>{title} | {info.role}</title>
+    <meta
+      name="description"
+      content="Ahmed Omran's Portfolio - Front-End Developer specializing in HTML, CSS, JavaScript, and React. Check out my projects and contact me."
+    />
+    <meta
+      name="keywords"
+      content="Ahmed Omran, Frontend Developer, React, Next.js, JavaScript, TypeScript, Portfolio, 2ao1, ao, AO"
+    />
+    <meta name="author" content="Ahmed Omran" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <link rel="stylesheet" href="/src/styles/global.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G39QYJSQQB"
+    ></script>
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-G39QYJSQQB");
+    </script>
+  </head>
+
+  <body class="bg-tertiary relative">
+    <Loading />
+    <main
+      id="page-content"
+      class="bg-tertiary text-primary-800 relative p-4 font-subhead container mx-auto opacity-0"
+    >
+      <slot />
+    </main>
+
+    <script>
+      import gsap from "gsap";
+      import ScrollTrigger from "gsap/ScrollTrigger";
+      import SplitText from "gsap/SplitText";
+
+      // Register GSAP plugins
+      gsap.registerPlugin(ScrollTrigger, SplitText);
+
+      // Improve performance
+      ScrollTrigger.config({
+        limitCallbacks: true,
+        ignoreMobileResize: true,
+      });
+
+      gsap.config({
+        nullTargetWarn: false,
+        autoSleep: 60,
+        force3D: true,
+      });
+    </script>
+
+    <script src="../utils/Layout.animation.js"></script>
+  </body>
+</html>

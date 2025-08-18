@@ -1,0 +1,33 @@
+---
+import Link from "./Link.astro";
+
+const { items, projectsCount = 0, width = "", className = "" } = Astro.props;
+---
+
+<ul class={`flex flex-wrap ${width} ${className}`}>
+  {
+    items.map((item: { link: any; path: any; name: string }, index: number) => (
+      <li class="mr-2">
+        <div class="flex h-4">
+          <Link
+            href={item.link || item.path}
+            target={
+              item.name.toLowerCase() === "index" ||
+              item.name.toLowerCase() === "about" ||
+              item.name.toLowerCase() === "projects" ||
+              item.name.toLowerCase() === "contact"
+                ? "_self"
+                : "_blank"
+            }
+          >
+            {item.name.toUpperCase()}
+            {item.name.toLowerCase() === "projects" &&
+              projectsCount &&
+              ` [0${projectsCount}]`}
+          </Link>
+          {index < items.length - 1 ? ", " : "."}
+        </div>
+      </li>
+    ))
+  }
+</ul>

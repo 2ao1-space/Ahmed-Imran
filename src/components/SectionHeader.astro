@@ -1,0 +1,11 @@
+---
+const { title, class: className } = Astro.props;
+---
+
+<div
+  class={`${className} font-subhead py-4 flex justify-between items-end border-b border-primary-900`}
+>
+  <h5 class="text-6xl">{title}</h5>
+
+  <slot />
+</div>

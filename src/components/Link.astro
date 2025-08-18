@@ -1,0 +1,109 @@
+---
+const { href, target, class: className } = Astro.props;
+---
+
+<a
+  href={href}
+  class={`${className} animated-link flex flex-col justify-center items-center overflow-y-hidden`}
+  target={target}
+>
+  <div class="h-5 overflow-hidden relative">
+    <span class="initial-link">
+      <slot />
+    </span>
+    <span class="second-link absolute top-0 left-0">
+      <slot />
+    </span>
+  </div>
+</a>
+
+<script>
+  import gsap from "gsap";
+  import SplitText from "gsap/SplitText";
+
+  gsap.registerPlugin(SplitText);
+
+  // Function to initialize link animations after fonts are loaded
+  const initLinkAnimations = async () => {
+    try {
+      // Wait for fonts to load
+      await document.fonts.ready;
+
+      // Add a small delay to ensure fonts are fully applied
+      await new Promise((resolve) => setTimeout(resolve, 100));
+
+      const animatedLinks = document.querySelectorAll(".animated-link");
+
+      for (const link of animatedLinks) {
+        try {
+          const initialLink = link.querySelector(".initial-link");
+          const secondLink = link.querySelector(".second-link");
+
+          if (!initialLink || !secondLink) continue;
+
+          // Create split texts after ensuring fonts are loaded
+          const hoverText = new SplitText(initialLink, {
+            type: "chars",
+            charsClass: "char",
+          });
+
+          const finalText = new SplitText(secondLink, {
+            type: "chars",
+            charsClass: "char",
+          });
+
+          // Verify split was successful
+          if (!hoverText.chars?.length || !finalText.chars?.length) continue;
+
+          // Set initial states
+          gsap.set(hoverText.chars, { y: 0 });
+          gsap.set(finalText.chars, { y: "100%" });
+
+          // Create hover animation timeline
+          const hoverTimeline = gsap.timeline({
+            paused: true,
+            defaults: { ease: "power2.out" },
+          });
+
+          // Add animations to timeline
+          hoverTimeline
+            .to(hoverText.chars, {
+              y: "-100%",
+              duration: 0.4,
+              stagger: 0.01,
+            })
+            .to(
+              finalText.chars,
+              {
+                y: 0,
+                duration: 0.4,
+                stagger: 0.01,
+              },
+              "<0.1"
+            );
+
+          // Add event listeners
+          link.addEventListener("mouseenter", () => {
+            hoverTimeline.play();
+          });
+
+          link.addEventListener("mouseleave", () => {
+            hoverTimeline.reverse();
+          });
+        } catch (err) {
+          console.warn("Error initializing link animation:", err);
+        }
+      }
+    } catch (err) {
+      console.warn("Error loading fonts:", err);
+    }
+  };
+
+  // Initialize animations when document is ready
+  if (document.fonts && document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initLinkAnimations);
+  } else {
+    // If document is already loaded or fonts API is not available
+    window.addEventListener("load", initLinkAnimations);
+  }
+</script>

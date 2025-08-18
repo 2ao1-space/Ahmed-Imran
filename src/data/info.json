@@ -1,0 +1,308 @@
+{
+  "name": "Ahmed Omran",
+  "heroRole_1": "Digital Versatile Designer",
+  "heroRole": "Designer, Developer, and Creative Guy",
+  "role": "Developer & Designer",
+  "jTitle": "Front-end Developer",
+  "birthYear": "2001",
+  "phone": "+20 1030960225",
+  "email": "Omran.a.jr@gmail.com",
+  "images": {
+    "Hero": "/images/Hero.jpg",
+    "logo": "/favicon.o",
+    "myImg": "/images/My__img.jpg",
+    "myImgTop": "/images/My__img_top.jpg",
+    "storyImg": "/images/sroty1.jpg"
+  },
+  "location": { "city": "Cairo", "country": "Egypt" },
+  "status": "Freelance Projects",
+  "siteMap": [
+    { "path": "/", "name": "Index" },
+    { "path": "/about", "name": "About" },
+    { "path": "/projects", "name": "Projects" },
+    { "path": "/contact", "name": "Contact" }
+  ],
+  "education": {
+    "uni": "Faculty of Commerce, Sadat University",
+    "field": "Bachelor’s Degree in Business Administration",
+    "grade": "Good",
+    "date": "2019 - 2023"
+  },
+  "courses": [
+    "The Ultimate React Course 2024: React, Next.js, Redux & More (Udemy)",
+    "The Complete JavaScript Course 2024: From Zero to Expert! (Udemy)"
+  ],
+  "skills": {
+    "front": [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Angular",
+      "Tailwind CSS",
+      "GSAP"
+    ],
+    "back": [
+      "C#",
+      "ASP.NET Core",
+      "ASP.NET Core MVC",
+      "Node.js",
+      "Express.js",
+      "Entity Framework Core",
+      "SQL Server",
+      "PostgreSQL"
+    ],
+
+    "frontend": {
+      "core": ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"],
+      "frameworks": ["React.js", "Next.js", "Angular"],
+      "stateManagement": [
+        "Redux Toolkit",
+        "Zustand",
+        "Context API",
+        "React Query"
+      ],
+      "styling": ["Tailwind CSS", "SASS", "Bootstrap", "shadcn/ui"],
+      "animation": ["Framer Motion", "GSAP"]
+    },
+    "backend": {
+      "frameworks": [
+        "C#",
+        "ASP.NET Core",
+        "ASP.NET Core MVC",
+        "Node.js",
+        "Express.js"
+      ],
+      "realTime": ["SignalR", "Socket.io"],
+      "authentication": ["JWT", "ASP.NET Identity"],
+      "orm": ["Entity Framework Core"]
+    },
+    "databases": ["SQL Server", "PostgreSQL", "SQLite"],
+    "toolsAndDevOps": [
+      "Git/GitHub",
+      "Docker",
+      "VS Code",
+      "Visual Studio",
+      "GitHub Actions",
+      "REST APIs",
+      "Postman",
+      "npm/yarn",
+      "NuGet"
+    ],
+    "currentlyLearning": ["Angular (Components, Services, RxJS)"],
+    "languages": [
+      {
+        "name": "Arabic",
+        "level": "Native/Bilingual"
+      },
+      {
+        "name": "English",
+        "level": "Conversational"
+      }
+    ]
+  },
+  "CVs": [
+    {
+      "roleTitle": "Frontend Developer",
+      "filePath": "/public/AhmedOmran_FrontendDeveloper_CV.pdf"
+    },
+    {
+      "roleTitle": "Backend Developer",
+      "filePath": "/public/AhmedOmran_BackendDeveloper_CV.pdf"
+    },
+    {
+      "roleTitle": "Frontend Developer",
+      "filePath": "/public/AhmedOmran_FrontendDeveloper_CV.pdf"
+    },
+    {
+      "roleTitle": "Backend Developer",
+      "filePath": "/public/AhmedOmran_BackendDeveloper_CV.pdf"
+    }
+  ],
+  "social": [
+    {
+      "name": "Resume",
+      "icon": "<File />",
+      "path": "/resume"
+    },
+    {
+      "name": "Github",
+      "icon": "<Github />",
+      "path": "https://github.com/2ao1-1"
+    },
+    {
+      "name": "Linkedin",
+      "icon": "<Linkedin />",
+      "path": "https://www.linkedin.com/in/ahmed-omran-2ao1/"
+    },
+    {
+      "name": "Instagram",
+      "icon": "<Instagram />",
+      "path": "https://www.instagram.com/10.7.2ao1/"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Email",
+      "icon": "<Mail />",
+      "path": "mailto:omran.a.jr@gmail.com"
+    },
+    {
+      "name": "Whatsapp",
+      "icon": "<MessageCircle />",
+      "path": "https://wa.me/201030960225"
+    }
+  ],
+  "bio": [
+    "What started as a love for design and how things move on a screen quickly turned into a passion for building seamless, interactive digital experiences. I blend design with code to create interfaces that are intuitive, functional, and smooth."
+  ],
+  "story": [
+    "I was born and raised in a small town in Egypt, and curiosity was my first guide to the world of web development. I knew little, just glimpses, but that curiosity was enough to open a wide door for me that I hadn't anticipated. When I started college in 2019, I had no clear vision for my career path. I thought I'd head toward marketing and advertising, but I found myself returning to web development, as if it was the path I'd been searching for all along.",
+    "At first, programming fascinated me. But what truly captivated me was the creative aspect—the colors, the movement, and the fun challenge of building something that combines beauty and function. From there, I naturally transitioned to the world of design, and since then, I haven't looked back.",
+    "Once technology and design met in my world, my true journey began. Every question opened three more, and every line of code revealed new possibilities. The road wasn't easy; some opportunities didn't pan out, but I didn't see failure—I saw a space to create my own path. I spent long hours learning, experimenting, making mistakes, and learning again. Guidance, constant curiosity, and a determination to develop myself helped me reach where I am today.",
+    "I now specialize in designing and developing responsive, user-friendly, and visually appealing web interfaces. I believe that the best digital experiences arise when beauty meets logic, and I'm here to make that encounter feel like magic."
+  ],
+  "beliefs": {
+    "beyond coding": "I believe that great work doesn’t come from pressure alone—it comes from passion, curiosity, and the willingness to keep learning, even when it’s uncomfortable. That balance between focus and fun? That’s where the magic happens.",
+    "content": "Outside of work, you’ll usually find me recharging—sometimes by taking a quick nap, playing video games, kicking around a football, or simply diving into the latest design trends for inspiration. I enjoy experimenting with creative ideas, whether or not they ever make it into a final project. It keeps my mind fresh and my creativity alive."
+  },
+  "projects": [
+    {
+      "title": "AO Gallery",
+      "date": "8 / 2025",
+      "client": "AO Gallery",
+      "img": "/images/AO-Gallery.png",
+      "projectImg": [
+        "/images/project2-banki.jpg",
+        "/images/project2-banki.jpg",
+        "/images/project2-banki.jpg"
+      ],
+      "bio": "A fitness website promoting healthy living.A fitness website promoting healthy living.A fitness website promoting healthy living.",
+      "url": "http://144.91.75.57:8888",
+      "repo": "https://github.com/2ao1-1/Banki",
+      "special": "Art Gallary Website",
+      "type": ["Art Gallery", "UI / UX"],
+      "createdBy": {
+        "dev": "Ahmed Omran",
+        "des": "Ahmed Omran"
+      },
+
+      "description": "clean and professional landing page tailored for a fictional bank or financial platform. It uses a calm, trustworthy color palette and minimalist layout to convey financial security and user trust. The sections are crafted to guide the user through service highlights, benefits, and key offerings.",
+      "skill": ["Html", "Css", "JavaScript"],
+      "features": [
+        "Clean grid-based layout for easy scanning.",
+        "Sticky navigation bar for quick access.",
+        "Hero section with key messaging and CTA",
+        "Responsive design with mobile adjustments",
+        "Service cards with iconography",
+        "Testimonials and trust indicators"
+      ]
+    },
+    {
+      "title": "Banki",
+      "date": "12 / 2024",
+      "client": "Mentor Project",
+      "img": "/images/project2-banki.jpg",
+      "projectImg": [
+        "/images/project2-banki.jpg",
+        "/images/project2-banki.jpg",
+        "/images/project2-banki.jpg"
+      ],
+      "bio": "A fitness website promoting healthy living.A fitness website promoting healthy living.A fitness website promoting healthy living.",
+      "url": "https://banky.netlify.app/",
+      "repo": "https://github.com/2ao1-1/Banki",
+      "special": "Financial Website",
+      "type": ["Financial Services", "UI/UX"],
+      "createdBy": {
+        "dev": "Ahmed Omran",
+        "des": "Ahmed Omran"
+      },
+
+      "description": "Banki is a clean and professional landing page tailored for a fictional bank or financial platform. It uses a calm, trustworthy color palette and minimalist layout to convey financial security and user trust. The sections are crafted to guide the user through service highlights, benefits, and key offerings.",
+      "skill": ["Html", "Css", "JavaScript"],
+      "features": [
+        "Clean grid-based layout for easy scanning.",
+        "Sticky navigation bar for quick access.",
+        "Hero section with key messaging and CTA",
+        "Responsive design with mobile adjustments",
+        "Service cards with iconography",
+        "Testimonials and trust indicators"
+      ]
+    },
+    {
+      "title": "MoveOn",
+      "date": "11 / 2024",
+      "img": "/images/project3-moveon.jpg",
+      "bio": "An active lifestyle with fitness training.",
+      "url": "https://moveon-fitness.netlify.app/",
+      "repo": "https://github.com/2ao1-1/MoveOn",
+      "special": "fitness website",
+      "type": ["Static Website", "Fitness UI Design", "Responsive Design"],
+      "description": "MoveOn is a visually striking fitness website designed to promote a healthy lifestyle and gym membership programs. It uses powerful imagery, bold typography, and bright colors to reflect energy and action. Each section focuses on benefits, testimonials, and motivational content.",
+      "skill": ["Html", "Css", "JavaScript", "Tailwind"],
+      "features": [
+        "Fullscreen hero section with motivational slogan",
+        "Bold color palette suitable for fitness branding",
+        "About & Services sections with visual icons",
+        "Testimonials and pricing plans",
+        "Contact form with functional structure",
+        "Fully mobile-friendly with flex/grid layout"
+      ]
+    },
+    {
+      "title": "Bsaraha",
+      "date": "2 / 2025",
+      "img": "/images/project7-bsaraha.jpg",
+      "phone": "/images/project7-bsaraha-phone.jpg",
+      "bio": "Personal portfolio website showcasing frontend development skills and projects",
+      "url": "http://144.91.75.57:3000",
+      "repo": "https://github.com/2ao1-1/bsaraha",
+      "special": "social website",
+      "type": [
+        "Full Stack App",
+        "Messaging Platform",
+        "Authentication & Real-time Data"
+      ],
+      "description": "Bsaraha is a full-stack anonymous messaging platform inspired by “Saraha”. Built using React for the frontend and Node/Express for the backend, users can create accounts, receive and send messages, and manage their inbox securely. The app implements JWT authentication, auto-login.",
+      "skill": ["React", "Tailwind", "Framer Motion"],
+      "features": [
+        "JWT-based authentication system",
+        "Anonymous message submission interface",
+        "Real-time updates (messages appear directly)",
+        "User-friendly dashboard for received messages",
+        "Doctor approval workflow with email notification",
+        "Mobile-responsive design"
+      ]
+    },
+    {
+      "title": "Crusto Pizza",
+      "date": "4 / 2025",
+      "img": "/images/project6-crusto.jpg",
+      "bio": "An Italian pizza restaurant",
+      "url": "https://crusto-pizza.netlify.app/",
+      "repo": "https://github.com/2ao1-1/Crusto-v2",
+      "special": "food website",
+      "type": ["UI Redesign", "Mobile-First Responsive", "Modern Web Design"],
+      "description": "Crusto Pizza is an upgraded version of the original Crusto site with an emphasis on mobile usability, cleaner design, and more expressive visual hierarchy. The layout is simplified with clear sections and modern spacing, making it more accessible on smaller devices while keeping the branding intact.",
+      "skill": ["Html", "Css", "JavaScript", "Tailwind"],
+      "features": [
+        "Improved responsive layout with mobile-first design",
+        "Simple, readable fonts and color contrast",
+        "Clear CTA and menu presentation",
+        "Lightweight animations and hover states",
+        "Structured content flow (hero → services → menu → contact)"
+      ]
+    }
+  ],
+
+  "experiance": [
+    {
+      "name": "Nancy AI",
+      "logo": "/images/sroty1.jpg",
+      "url": "https://nancy-ai.com",
+      "role": "Front-End Intern",
+      "period": { "from": "7-2025", "to": "" },
+      "opinion": "The company provides a supportive work environment for interns, allowing me to develop my Front-End skills and work with the latest technologies. The team is collaborative and helps enhance my practical experience through real-world projects and continuous guidance."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+---
+import info from "../data/info.json";
+import Available from "../components/Available.astro";
+import HeaderSections from "../components/header/HeaderSections.astro";
+import LinksList from "../components/LinkList.astro";
+import SpanTitle from "../components/SpanTitle.astro";
+---
+
+<header class="bg-tertiary border-b border-primary-900">
+  <div
+    class="container m-auto flex justify-between gap-12 font-subhead text-xs pb-4"
+  >
+    <!-- name & role -->
+    <HeaderSections class="header-section">
+      <SpanTitle subtitle={info.name} class="split-text" />
+      <p class="uppercase split-text">
+        {info.role}.
+      </p>
+    </HeaderSections>
+
+    <!-- status -->
+    <HeaderSections class="header-section">
+      <SpanTitle subtitle={"status"} class="split-text" />
+      <Available />
+    </HeaderSections>
+
+    <!-- sitemap -->
+    <HeaderSections class="header-section">
+      <SpanTitle subtitle={"sitemap"} class="split-text" />
+      <LinksList items={info.siteMap} projectsCount={info.projects.length} />
+    </HeaderSections>
+
+    <!-- social-->
+    <HeaderSections class="header-section">
+      <SpanTitle subtitle={"connect"} class="split-text" />
+      <LinksList items={info.social} />
+    </HeaderSections>
+  </div>
+</header>

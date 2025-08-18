@@ -1,0 +1,14 @@
+---
+import Footer from "../layouts/Footer.astro";
+import Header from "../layouts/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Contacts from "../components/contact/Contact";
+---
+
+<Layout>
+  <Header />
+  <section class="h-screen container mx-auto">
+    <Contacts client:load />
+  </section>
+  <Footer prevPage="/projects" nextPage="/" />
+</Layout>
