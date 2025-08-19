@@ -4,18 +4,18 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://2ao1.space",
-  base: "/Ahmed-Imran",
+  site: "https://ahmed-imran.github.io/Ahmed-Imran",
+  // site: "https://2ao1.space",
+  // base: "/Ahmed-Imran",
   output: "static",
   integrations: [react(), sitemap()],
 
   build: {
-    assets: "assets",
-    inlineStylesheets: "auto",
+    inlineStylesheets: "always",
   },
 
   vite: {
-    base: "/Ahmed-Imran/",
+    // base: "/Ahmed-Imran/",
     ssr: {
       noExternal: ["gsap"],
     },
