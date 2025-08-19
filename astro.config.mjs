@@ -8,7 +8,7 @@ export default defineConfig({
   // site: "https://2ao1.space",
   base: "/Ahmed-Imran",
   output: "static",
-  integrations: [react(), sitemap()],
+  integrations: [react(), sitemap(), tailwind()],
 
   build: {
     inlineStylesheets: "always",
@@ -28,6 +28,9 @@ export default defineConfig({
           },
         },
       },
+    },
+    css: {
+      transformer: "postcss",
     },
   },
 
