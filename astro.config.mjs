@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://ahmed-imran.github.io/Ahmed-Imran",
   // site: "https://2ao1.space",
-  // base: "/Ahmed-Imran",
+  base: "/Ahmed-Imran",
   output: "static",
   integrations: [react(), sitemap()],
 
